@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    height: 100vh;
+    width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.game {
+    background: white;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    border: 1px solid;
+}
+
+
+
+.info {
+    background: green;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.country-name {
+    font-size: 1.4em;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255, .1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    border: 2px black solid;
+    background: white;
+    border-radius: 10px;
+    padding: 2em;
+    display: block;
+}
+
+.modal p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.modal button {
+    background-color: #4CAF50;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1.3em;
+    display: inline-block;
+}
+
+.country-label {
+    position: absolute;
+    background: white;
+    padding: 1px;
+    font-size: 0.8em;
+    user-select: none;
+}
+
+.country-label:hover {
+    display: none;
+    opacity: 0
+}
+
+svg {
+  max-height: 700px;
+  width: 100%;
+}
+
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#1B70B5;stroke:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#003399;fill-opacity:0;}
+	.st2{fill:none;stroke:#FFFFFF;}
+	.st3{fill:#003399;fill-opacity:0;}
+	.st4{opacity:0;}
+    .st5{fill-rule:evenodd;clip-rule:evenodd;fill:#F7F504;stroke:gray;stroke-width:2px;}
+    .st6{fill-rule:evenodd;clip-rule:evenodd;fill:#abd2f2;stroke:#FFFFFF;}
+
+/*@media (max-width: 600px) {
+.modal {
+    transform: scale(.8)
+}
+
+    .info {
+        flex-direction: column;
+        gap: 0.5em;
+        position: sticky;
+        width: 100%;
+    }
+    .country-label {
+    font-size: 0.2em;
+}
+}*/
