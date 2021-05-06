@@ -93,7 +93,7 @@ function createLabel(find) {
     const parent = document.querySelector('.game').getBoundingClientRect()
 
     const position = country.getBoundingClientRect()
-    console.log(((position.left + position.width/2) - parent.left)/parent.width*100)
+
     const left = (position.left + position.width / 2) - parent.left
     const top = (position.top + position.height / 2) - parent.top
 
@@ -103,8 +103,7 @@ function createLabel(find) {
 
     label.textContent = find.split('_').map(s => capitalize(s)).join(' ')
     label.style.left = Math.floor(((position.left + position.width/2) - parent.left)/parent.width*100)+ '%'
-    /*label.style.top = Math.floor(((position.top + position.height/2) - parent.top)/parent.height*100)+ '%'*/
-    label.style.top = position.top/parent.height*100+'%';
+    label.style.top = ((position.top + position.height/2) - parent.top)/parent.height*100+'%'
     document.querySelector('.map').appendChild(label)
 
 }
